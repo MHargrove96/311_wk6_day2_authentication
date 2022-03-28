@@ -1,4 +1,4 @@
-1const axios = require('axios')
+const axios = require('axios')
 const mysql = require('mysql')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
@@ -52,6 +52,8 @@ const login = (req, res) => {
   .catch(e => {
     res.send(e)
   })
+
+
 
   // let sql = "SELECT * FROM usersCredentials WHERE username = ?"
   // sql = mysql.format(sql, [ username ])
